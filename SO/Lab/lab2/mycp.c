@@ -19,13 +19,14 @@ int main(int argc, char **argv) {
 		perror("open");
 		return -1;
 	} else {
-		ssize_t bytes = read(fd, buf, sizeof(buf));
-
 		int fdw = open(argv[2], O_WRONLY | O_CREAT, 0644);
 		if (fdw < 0) {
 			return -1;
 		}
-		write(fdw, buf, bytes);
+
+		ssize_t bytes;
+		while(bytes = read(fd, buf, sizeof(buf)))
+			write(fdw, buf, bytes);
 	}
 
 	return 0;
