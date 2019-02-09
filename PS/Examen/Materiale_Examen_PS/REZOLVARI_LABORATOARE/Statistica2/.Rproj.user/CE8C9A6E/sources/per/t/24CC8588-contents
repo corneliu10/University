@@ -1,0 +1,18 @@
+head(cars)
+
+scatter.smooth(x=cars$speed, y=cars$dist, main="Dist ~ Speed")  # scatterplot
+
+par(mfrow=c(1, 2))  # divide graph area in 2 columns
+boxplot(cars$speed, main="Speed", sub=paste("Outlier rows: ", boxplot.stats(cars$speed)$out))  # box plot for 'speed'
+boxplot(cars$dist, main="Distance", sub=paste("Outlier rows: ", boxplot.stats(cars$dist)$out))  # box plot for 'distance'
+
+cor(cars$speed, cars$dist)  # calculate correlation between speed and distance 
+
+linearMod <- lm(dist ~ speed, data=cars)  # build linear regression model on full data
+print(linearMod)
+
+par(mfrow=c(1, 2))  # dividex graph area in 2 columns
+plot(cars$speed, cars$dist)
+
+t <- seq(0, 30, 0.001)
+lines(t, 3.932 * t - 17.579, col="magenta")

@@ -1,0 +1,38 @@
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="currency.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <table>
+      <thead>
+        <tr>
+          <th>Data</th>
+          <th>EUR</th>
+          <th>USD</th>
+          <th>CHF</th>
+          <th>EDIT</th>
+          <th>DELETE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="(c, i) in curr">
+          <td>{{c.Data}}</td>
+          <td>{{c.EUR}}</td>
+          <td>{{c.USD}}</td>
+          <td>{{c.CHF}}</td>
+          <td><button v-on:click="EDIT(i)">{{i}}</button></td>
+          <td><button v-on:click="REMOVE(i)">{{i}}</button></td>
+        </tr>
+      </tbody>
+    </table>
+    Data:<INPUT v-model="Data">
+    EUR:<INPUT v-model="EUR">
+    USD:<INPUT v-model="USD">
+    <button v-on:click="ADD">ADD</button>
+  </div>
+
+</body>
+</html>
