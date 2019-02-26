@@ -1,0 +1,1 @@
+package lab1.tasks.task1;
