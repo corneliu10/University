@@ -1,26 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0edc1e59-9161-49a8-9f7b-bafd6874fbb3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tasks/task1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/CleaningProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/ClotheProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/FoodProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/FurnitureProduct.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/Invoice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/InvoiceItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/Price.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task4/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task6/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task6/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task7/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tasks/task8/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Lab3.rar" beforeDir="false" />
-    </list>
+    <list default="true" id="0edc1e59-9161-49a8-9f7b-bafd6874fbb3" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tasks/task7/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+            <state relative-caret-position="561">
+              <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -78,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/src/tasks/task8/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
-              <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+              <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -86,7 +67,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
+            <state relative-caret-position="10302">
               <caret line="657" selection-start-line="657" selection-end-line="657" />
             </state>
           </provider>
@@ -283,16 +264,17 @@
       <workItem from="1552914260729" duration="14517000" />
       <workItem from="1552977728208" duration="3873000" />
       <workItem from="1553007805491" duration="2338000" />
+      <workItem from="1554044556508" duration="750000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20728000" />
+    <option name="totallyTimeSpent" value="21478000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24615385" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25020242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -572,6 +554,7 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/tasks/task8/String.java" />
     <entry file="file://$PROJECT_DIR$/src/examples/immutableEx/ImmutableExample.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -601,31 +584,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="657" selection-start-line="657" selection-end-line="657" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/tasks/task8/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/tasks/task7/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        <state relative-caret-position="561">
+          <caret line="33" column="26" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10302">
+          <caret line="657" selection-start-line="657" selection-end-line="657" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/tasks/task8/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="49" lean-forward="true" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
         </state>
       </provider>
     </entry>
