@@ -11,6 +11,15 @@ public class User implements Authenticable {
 
     private String userName;
     private String hashPassword;
+    private String token = null;
+
+    public User(String firstName, String lastName, Date dateOfBirth, String userName, String hashPassword) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.userName = userName;
+        this.hashPassword = hashPassword;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -38,7 +47,7 @@ public class User implements Authenticable {
 
     @Override
     public String getToken() {
-        return null;
+        return token == null ? Authenticable.DEFAULT_TOKEN : token;
     }
 
     @Override

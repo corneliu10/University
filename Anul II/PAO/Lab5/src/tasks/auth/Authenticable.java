@@ -1,9 +1,13 @@
 package tasks.auth;
 
 public interface Authenticable {
-    public static final String DEFAULT_TOKEN = "abc";
+    public static final String DEFAULT_TOKEN = "TEST";
 
     String getToken();
-    String getUserName();
-    String getHashPassword();
+    default String getUserName() {
+        return "someusername";
+    }
+    default String getHashPassword() {
+        return "somepass";
+    }
 }

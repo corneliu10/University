@@ -13,11 +13,12 @@ public class Triangle implements Shape {
 
     @Override
     public Double getArea() {
-        return null;
+        return Math.sqrt(getPerimeter()/2 * (getPerimeter()/2 - sideA) *
+                        (getPerimeter()/2 - sideB) * (getPerimeter()/2 - sideC));
     }
 
     @Override
     public Double getPerimeter() {
-        return null;
+        return sideA + sideB + sideC;
     }
 }
