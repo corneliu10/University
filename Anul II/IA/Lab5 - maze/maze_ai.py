@@ -28,22 +28,65 @@ class Graf:
     def scop(self, nod):
         return nod.info == self.reprez_scop
 
-
-	# TODO completat euristica 
     def calculeaza_h(self, reprez_nod):
-        pass
+        poz_nod = reprez_nod.index(1)
+        poz_scop = self.reprez_scop.index(1)
+        i_nod = int(poz_nod / Nod.NR_COLOANE)
+        j_nod = int(poz_nod % Nod.NR_COLOANE)
+        i_scop = int(poz_scop / Nod.NR_COLOANE)
+        j_scop = int(poz_scop % Nod.NR_COLOANE)
+
+        return abs(i_nod - i_scop) + abs(j_nod - j_scop)
 	
-	def interschimba(self, ind1, ind2, l):
+    def interschimba(self, i1, j1, i2, j2, l):
         lnou = list(l)
+        ind1 = i1 * Nod.NR_COLOANE + j1
+        ind2 = i2 * Nod.NR_COLOANE + j2
+
         lnou[ind1], lnou[ind2] = lnou[ind2], lnou[ind1]
         return lnou
 
-
-
-
-	# TODO Calcul succeesori
     def calculeaza_succesori(self, nod):
-        ...
+        poz_nod = nod.info.index(1)
+        i_nod = int(poz_nod / Nod.NR_COLOANE)
+        j_nod = int(poz_nod % Nod.NR_COLOANE)
+
+        l_succesori = []
+        if i_nod >= 1:
+            if nod.info[(i_nod - 1) * Nod.NR_COLOANE + j_nod] is 0:
+                info_nou = self.interschimba(i_nod, j_nod, i_nod - 1, j_nod, nod.info)
+                h_nou = self.calculeaza_h(info_nou)
+                l_succesori.append((Nod(info_nou, h_nou), 1))
+        if i_nod < Nod.NR_LINII - 1:
+            if nod.info[(i_nod + 1) * Nod.NR_COLOANE + j_nod] is 0:
+                info_nou = self.interschimba(i_nod, j_nod, i_nod + 1, j_nod, nod.info)
+                h_nou = self.calculeaza_h(info_nou)
+                l_succesori.append((Nod(info_nou, h_nou), 1))
+        if j_nod >= 1:
+            if nod.info[(i_nod) * Nod.NR_COLOANE + j_nod - 1] is 0:
+                info_nou = self.interschimba(i_nod, j_nod, i_nod, j_nod - 1, nod.info)
+                h_nou = self.calculeaza_h(info_nou)
+                l_succesori.append((Nod(info_nou, h_nou), 1))
+        if j_nod < Nod.NR_COLOANE - 1:
+            if nod.info[(i_nod) * Nod.NR_COLOANE + j_nod + 1] is 0:
+                info_nou = self.interschimba(i_nod, j_nod, i_nod, j_nod + 1, nod.info)
+                h_nou = self.calculeaza_h(info_nou)
+                l_succesori.append((Nod(info_nou, h_nou), 1))
+        
+        '''
+        if i_nod >= 1 and j_nod >= 1:
+            if nod.info[(i_nod - 1) * Nod.NR_COLOANE + j_nod - 1] is 0:
+                info_nou = self.interschimba(i_nod, j_nod, i_nod - 1, j_nod - 1, nod.info)
+                h_nou = self.calculeaza_h(info_nou)
+                l_succesori.append((Nod(info_nou, h_nou), 1))
+        
+        if i_nod >= 1 and j_nod < Nod.NR_COLOANE - 1:
+            if nod.info[(i_nod - 1) * Nod.NR_COLOANE + j_nod + 1] is 0:
+                    info_nou = self.interschimba(i_nod, j_nod, i_nod - 1, j_nod + 1, nod.info)
+                    h_nou = self.calculeaza_h(info_nou)
+                    l_succesori.append((Nod(info_nou, h_nou), 1))
+        '''
+        return l_succesori
 
 
 """ Sfarsit definire problema """
@@ -139,7 +182,7 @@ def a_star(graf):
                         open_list.append(nod_cautare)
         open_list.sort(key=lambda x: (x.f, x.g))
 
-    f = open('D:/PythonWorkspace/maze/demo_file.txt', 'a')
+    f = open('./demo_file.txt', 'a')
     f.write(debug_str_l_noduri(nod_curent.drum_arbore()))
     return get_lista_solutii(nod_curent.drum_arbore())
 

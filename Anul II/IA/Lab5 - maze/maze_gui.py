@@ -69,8 +69,8 @@ def computer_player(list_of_moves=None):
     last_move = list_of_moves[-1]
     draw_game_window(first_move, last_move)
     pygame.time.delay(10)
-    pos_zero_ini = first_move.index(1)
-    x, y = get_x_y(pos_zero_ini)
+    pos_unu_ini = first_move.index(1)
+    x, y = get_x_y(pos_unu_ini)
     pygame.event.get()
     time.sleep(0.4)
     while run:
@@ -80,9 +80,14 @@ def computer_player(list_of_moves=None):
                 if event.type == pygame.QUIT:
                     run = False
                     pygame.quit()
-            # TODO determina mutarile calculatorului!
-			#...
-            pygame.time.delay(500)
+            x_old, y_old = x, y
+            pos_unu_new = move.index(1)
+            x, y = get_x_y(pos_unu_new)
+            print(x,y, y_old, x_old)
+            redraw_game_window(x, y, x_old, y_old)
+
+            pos_unu_ini = pos_unu_new
+            pygame.time.delay(100)
 
         run = False
     pygame.time.delay(1500)
@@ -125,6 +130,9 @@ def new_maze():
     nr_obstacole = 100
     pozitii, scop = get_pozitii(nr_obstacole)
     list_of_moves = db.main(pozitii, scop)
+    while len(list_of_moves) == 0:
+        pozitii, scop = get_pozitii(nr_obstacole)
+        list_of_moves = db.main(pozitii, scop)
     computer_player(list_of_moves)
 
 
@@ -143,7 +151,7 @@ def start_page(win):
         smallText = pygame.font.SysFont("comicsansms", 20)
 
         button("New Maze", 50, 200, 300, 50, dark_slate_blue, cornflower_blue, new_maze)
-        button("Predefined Maze", 50, 300, 300, 50, dark_slate_blue, cornflower_blue, computer_player)
+        button("Computer Player", 50, 300, 300, 50, dark_slate_blue, cornflower_blue, computer_player)
         pygame.display.update()
 
 
