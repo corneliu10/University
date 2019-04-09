@@ -2,7 +2,6 @@ import time
 
 ADANCIME_MAX = 6
 
-
 def elem_identice(lista):
     '''
     lista contine elementele de pe linie, coloana  sau
@@ -55,7 +54,7 @@ class Joc:
         l_mutari = []
         # adauga in l_mutari toate mutarile pe care le poate face jucator_opus
         for x in range(9):
-            if self.matr[x] == '#':
+            if self.matr[x] == self.__class__.GOL:
                 matr_copy = self.matr.copy()
                 matr_copy[x] = jucator_opus
                 l_mutari.append(Joc(matr_copy))
@@ -92,7 +91,6 @@ class Joc:
         se intoarce 99+adancime daca castiga MAX, -99-adancime daca pierde MAX si linii_deschise pt MAX - linii deschise
         pt MIN altfel
         '''
-
 
         # if (adancime==0):
         if t_final == self.__class__.JMAX:
@@ -223,8 +221,8 @@ def main():
                     linie = int(input("linie="))
                     coloana = int(input("coloana="))
 
-                    if (linie in range(0, 3) and coloana in range(0, 3)):
-                        if stare_curenta.tabla_joc.matr[linie * 3 + coloana] == Joc.GOL:
+                    if (linie in range(0, Joc.NR_COLOANE) and coloana in range(0, Joc.NR_COLOANE)):
+                        if stare_curenta.tabla_joc.matr[linie * Joc.NR_COLOANE + coloana] == Joc.GOL:
                             raspuns_valid = True
                         else:
                             print("Exista deja un simbol in pozitia ceruta.")
@@ -236,7 +234,7 @@ def main():
 
             # dupa iesirea din while sigur am valide atat linia cat si coloana
             # deci pot plasa simbolul pe "tabla de joc"
-            stare_curenta.tabla_joc.matr[linie * 3 + coloana] = Joc.JMIN
+            stare_curenta.tabla_joc.matr[linie * Joc.NR_COLOANE + coloana] = Joc.JMIN
 
             # afisarea starii jocului in urma mutarii utilizatorului
             print("\nTabla dupa mutarea jucatorului")

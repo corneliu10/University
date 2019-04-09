@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc6f7de3-96e2-4308-aee0-202dac814c31" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../IA/lab 9/.vscode/launch.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IA/lab 9/.vscode/settings.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../IA/lab 9/lab9_x_and_0_alpha_beta.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Lab01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Surse Lab01/kb1.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Surse Lab01/kb2.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Surse Lab01/kb3.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Surse Lab01/kb4.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Surse Lab01/kb5.pl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../PL/Lab1/Surse Lab01/p1.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/lab10/connect4.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/lab10/connect4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../IA/lab8/lab_8 - x_and_zero_human_vs_computer.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../IA/lab8/lab_8 - x_and_zero_human_vs_computer.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,19 +14,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/examples/exceptionsEx/TryWIthReturnExample.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="77" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="77" />
-              <folding>
-                <element signature="e#110#111#0" expanded="true" />
-                <element signature="e#142#143#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/tasks/model/Authenticable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -184,6 +163,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,15 +201,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554239595805" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Personal Projects/BestTickets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -342,16 +321,17 @@
       <workItem from="1553781916915" duration="12032000" />
       <workItem from="1554234369690" duration="3810000" />
       <workItem from="1554458782179" duration="135000" />
+      <workItem from="1554788183116" duration="43000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15977000" />
+    <option name="totallyTimeSpent" value="16020000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2582996" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26234818" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -546,6 +526,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="35" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../../Personal Projects/BestTickets/BestTickets.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
         </state>
       </provider>
     </entry>

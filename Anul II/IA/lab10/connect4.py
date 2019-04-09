@@ -1,9 +1,7 @@
 import time
 import copy
 
-
 ADANCIME_MAX = 4
-
 
 def nu_mai_e_gol(matr):
     for linie in matr:
@@ -164,7 +162,7 @@ class Joc:
 
         # intervale_deschisa(juc) = cate intervale de 4 pozitii
         # (pe linii, coloane, diagonale) nu contin juc_opus
-        return self.nr_intervale_deschise(Joc.JMAX) - self.nr_intervale_deschise(Joc.JMIN)-1
+        return self.nr_intervale_deschise(Joc.JMAX) - self.nr_intervale_deschise(Joc.JMIN) - 1
 
     def estimeaza_scor(self, adancime):
         t_final = self.final()
