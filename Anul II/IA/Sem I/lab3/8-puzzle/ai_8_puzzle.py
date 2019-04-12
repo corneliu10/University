@@ -43,12 +43,6 @@ class Graf:
             h += self.__class__.dist_hamilton(reprez_nod[ind], i_elem, j_elem, self.reprez_scop)
         return h
 
-    def cauta_nod_nume(self, info):
-        for nod in self.noduri:
-            if nod.info == info:
-                return nod
-        return None
-
     def dist_hamilton(elem, i_elem, j_elem, reprezentare):
         nr = reprezentare.index(elem)
         i_scop = nr / Nod.NR_COLOANE
