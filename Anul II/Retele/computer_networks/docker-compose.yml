@@ -1,0 +1,27 @@
+version: '2.1'
+
+services:
+    rt1:
+        image: baseimage:latest
+        volumes:
+            - .:/elocal
+        tty: true
+        networks:
+            - dmz
+    rt2:
+        image: baseimage:latest
+        volumes:
+            - .:/elocal
+        tty: true
+        networks:
+            - dmz
+    rt3:
+        image: baseimage:latest
+        volumes:
+            - .:/elocal
+        tty: true
+        networks:
+            - dmz
+
+networks:
+    dmz: {}
