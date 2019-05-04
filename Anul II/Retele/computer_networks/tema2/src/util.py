@@ -55,7 +55,7 @@ def calculeaza_checksum(data):
             s += s >> 16
             s = ~s
             return s & 0xffff
-    else:
+    else: # little endian
         def checksum(pkt):
             if len(pkt) % 2 == 1:
                 pkt += "\0"

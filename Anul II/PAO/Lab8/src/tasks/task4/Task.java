@@ -1,14 +1,14 @@
 package tasks.task4;
 
 enum Severity {
-    Sev1,
+    Sev3,
     Sev2,
-    Sev3
+    Sev1
 }
 
-public class Task {
+public class Task implements Comparable<Task> {
     private String name;
-    private double time;
+    private double time; // in min
     private Severity severity;
     private boolean backLog;
 
@@ -49,5 +49,26 @@ public class Task {
 
     public void setBackLog(boolean backLog) {
         this.backLog = backLog;
+    }
+
+    @Override
+    public int compareTo(Task o) {
+        if (this.severity.ordinal() < o.severity.ordinal()) {
+            return 1;
+        } else if (this.severity.ordinal() > o.severity.ordinal()) {
+            return -1;
+        }
+
+        return Boolean.compare(o.backLog, this.backLog);
+    }
+
+    @Override
+    public String toString() {
+        return "Task{" +
+                "name='" + name + '\'' +
+                ", time=" + time +
+                ", severity=" + severity +
+                ", backLog=" + backLog +
+                '}';
     }
 }
