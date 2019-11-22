@@ -5,8 +5,6 @@ myInt = 555555555555555555555555555555555555555555555555555555555555555555555555
 double :: Integer -> Integer
 double x = x+x
 
-triple :: Integer -> Integer
-triple x = x+x+x
 
 --maxim :: Integer -> Integer -> Integer
 maxim x y = if (x > y)
